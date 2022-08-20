@@ -9,6 +9,7 @@
 # __init__.py -> importação do flash e do banco/ criar a config do app e do banco/ importar os routes
 # main.py -> Roda o programa
 
+#navbar.html -> metodo url_for é uma variavel python, precisa usar {{}}. Redireciona para
 #base.html -> {with mensagens} esta pegando todas as listas de mensagens e se tem alguem na lista exibe a mensagem e categoria
 #base.html -> {mensagem-> é a mensagem que a gente vai passar na tela, categoria-> é uma classe do bootstrap(tipos de alertas)}
 
