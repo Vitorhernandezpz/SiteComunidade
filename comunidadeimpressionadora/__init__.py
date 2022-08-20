@@ -11,5 +11,7 @@ app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///comunidade.db'
 database = SQLAlchemy(app)
 bcrypt = Bcrypt(app)
 login_manager = LoginManager(app)
+login_manager.login_view = 'login'               #login_view -> é como se fosse a página que sera redirecionada quando o login_manager fizer a exigencia
+login_manager.login_message_category = 'alert-info'
 
 from comunidadeimpressionadora import routes # importação feita embaixo porque em routes usa o app, e o app foi criado ali em cima
